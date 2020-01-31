@@ -1,0 +1,110 @@
+{
+  "employee": [
+    {
+      "name": "Sonik",
+      "mobile": 9033122117,
+      "email": "sonik.kapadia@1rivet.com",
+      "domain": "Angular",
+      "password": "121212",
+      "id": 1
+    },
+    {
+      "name": "Khizar",
+      "mobile": 8866207456,
+      "email": "khizar.shaikh@1rivet.com",
+      "domain": "Angular",
+      "password": "123123",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "Mitul",
+      "mobile": 9876548970,
+      "email": "mitul.patel@1rivet.com",
+      "domain": "Angular",
+      "password": "123123"
+    },
+    {
+      "id": 4,
+      "name": "Ronak",
+      "mobile": 8200336867,
+      "email": "ronak.patel@1rivet.com",
+      "domain": "Angular",
+      "password": "123123"
+    },
+    {
+      "name": "Nitesh",
+      "mobile": 8765876876,
+      "email": "nitesh.sharma@1rivet.com",
+      "domain": "Angular",
+      "password": "123123",
+      "id": 5
+    }
+  ],
+  "trainee": [
+    {
+      "name": "Dhruvit",
+      "mobile": 9426877444,
+      "email": "dhruvitmakadia@gmail.com",
+      "domain": "Angular",
+      "password": "123123",
+      "id": 1
+    },
+    {
+      "name": "Amit",
+      "mobile": 8469796310,
+      "email": "amitAC81@gmail.com",
+      "domain": "Angular",
+      "password": "121212",
+      "id": 2
+    },
+    {
+      "name": "Kiran",
+      "mobile": "8520852852",
+      "email": "kiran.tandel@gmail.com",
+      "domain": "Angular",
+      "password": "123123",
+      "id": 3
+    },
+    {
+      "name": "Shiv",
+      "mobile": "4568524785",
+      "email": "shiv@gmail.com",
+      "domain": "Angular",
+      "password": "123123",
+      "id": 4
+    },
+    {
+      "name": "Tapas",
+      "mobile": "7894561230",
+      "email": "tapas@gmail.com",
+      "domain": "Angular",
+      "password": "123123",
+      "id": 5
+    },
+    {
+      "name": "Bhargav",
+      "mobile": "8547963214",
+      "email": "bhargav@gmail.com",
+      "domain": "Angular",
+      "password": "123123",
+      "id": 6
+    },
+    {
+      "name": "Aastha",
+      "mobile": "9856321478",
+      "email": "aastha@gmail.com",
+      "domain": "Angular",
+      "password": "123123",
+      "id": 7
+    },
+    {
+      "name": "Samip",
+      "mobile": "8546987123",
+      "email": "samip@gmail.com",
+      "domain": "Angular",
+      "password": "123123",
+      "id": 8
+    }
+  ]
+}

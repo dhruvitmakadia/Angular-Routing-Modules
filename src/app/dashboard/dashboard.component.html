@@ -1,0 +1,30 @@
+<span (click)="doCheck()" style="font-size: 20px">Welcome To </span>
+<span *appMyif='flagBlack' appHighlight style="font-size: 40px">Dhruv<b style="color: red">IT</b></span>
+<span *appMyif='flagWhite' appHighlight style="font-size: 40px; color:whitesmoke">Dhruv<b style="color: red">IT</b></span>
+
+<section class='statis text-center'>
+    <div class="container-fluid">
+        <div class="row">
+
+            <div (click)="goToEmployee()" class="column button">
+                <div class="box success">
+                    <i class="fa fa-user-o"></i>
+                    <h3 *ngIf="employeeData">{{employeeData.length}}</h3>
+                    <p class="lead">Total Employee</p>
+                </div>
+            </div>
+            <div (click)="goToTrainee()" class="button column">
+                <div class="box success">
+                    <i class="fa fa-handshake-o"></i>
+                    <h3 *ngIf="traineeData">{{traineeData.length}}</h3>
+                    <p class="lead">Total Trainee</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <lib-clock></lib-clock>
+</section>
+
+
+
+

@@ -1,0 +1,12 @@
+<h3 style="text-align: center">Trainee Data</h3>
+<div *ngIf="flag">
+    <a (click)="insertForm()" routerLink="add" class="button4" style="background-color:#9a4ef1"><i
+            class="fa fa-plus"></i>
+        Add New</a>
+</div>
+
+<br><br><br>
+<app-table [dataObject]="traineeData" (sendMsg)='viewMsg($event)'></app-table>
+<br>
+
+<app-model></app-model>

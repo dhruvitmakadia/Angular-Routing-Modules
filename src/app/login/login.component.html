@@ -1,0 +1,16 @@
+<div style="text-align: center; margin-top:50px;">
+    <marquee>Please Login To Continue...</marquee>
+</div>
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div class="main">
+        <p class="sign" align="center">Login</p>
+
+
+        <input class="un " type="text" align="center" formControlName='username' placeholder="Username" appAutofocus>
+        <input class="pass" type="password" align="center" formControlName='password' placeholder="Password">
+        <button class="submit" type="submit" [disabled]="!loginForm.valid" align="center">Sign in</button>
+
+        <p class="forgot" align="center"><a href="#">Forgot Password?</a></p>
+        <p align="center">Don't have account <b><a (click)='goToRegister()'>Register Here</a></b></p>
+    </div>
+</form>

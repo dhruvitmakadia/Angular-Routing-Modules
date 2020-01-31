@@ -1,0 +1,48 @@
+@import "https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans";
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+table.redTable {
+  border: 3px solid #1976D2;
+  background-color: #EEE7DB;
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+table.redTable td, table.redTable th {
+  border: 1px solid #AAAAAA;
+  padding: 10px 3px;
+}
+table.redTable tbody td {
+  font-size: 20px;
+}
+table.redTable tr:nth-child(even) {
+  background: #F5C8BF;
+}
+table.redTable thead {
+  background: #1976D2;
+}
+table.redTable thead th {
+  font-size: 19px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  border-left: 2px solid #1976D2;
+}
+table.redTable thead th:first-child {
+  border-left: none;
+}
+
+table.redTable tfoot td {
+  font-size: 13px;
+}
+table.redTable tfoot .links {
+  text-align: right;
+}
+table.redTable tfoot .links a{
+  display: inline-block;
+  background: #FFFFFF;
+  color: #1976D2;
+  padding: 2px 8px;
+  border-radius: 5px;
+}

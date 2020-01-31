@@ -1,0 +1,29 @@
+<h2>Directive & Pipe</h2>
+
+<ul class="crises">
+        <li>
+            <a (click)="viewDirective()">
+                <span class="badge">1</span>Directive
+            </a>
+        </li>
+        <li>
+            <a (click)="viewPipe()">
+                <span class="badge">2</span>Pipe
+            </a>
+        </li>
+    </ul>
+<div *ngIf='showDirec'>
+    <button (click)="doCheck()" style="font-size: 20px">Click Here</button>
+    <br>
+    <span *appMyif='flagBlack' appHighlight style="font-size: 40px">Dhruv<b style="color: red">IT</b></span>
+    <span *appMyif='flagWhite' appHighlight style="font-size: 40px; color:whitesmoke">Dhruv<b style="color: red">IT</b></span>
+</div>
+
+<div *ngIf='showPipe'>
+        <span style="font-size: 20px">Enter Currency : </span>
+        <input class='txt' type="text" [(ngModel)]='num' placeholder="0" appAutofocus appOnlynumber>
+        <br>
+        <span style="font-size: 20px" *ngIf='num'>INR : {{num | currency: 'INR'}} <b>To</b> USD : {{num | convertCurrency | currency}}</span>
+        
+</div>
+

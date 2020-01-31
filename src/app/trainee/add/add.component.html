@@ -1,0 +1,32 @@
+<div class="form-style-5">
+    <form [formGroup]="traineeAddForm" (ngSubmit)="onSubmit()">
+        <fieldset>
+            <legend>Trainee Detail</legend>
+            <div *ngIf="name.invalid && (name.dirty || name.touched)" class="error">
+                <div *ngIf="name.errors.required">
+                    Name is required.
+                </div>
+                <div *ngIf="name.errors.minlength">
+                    Name must be at least 4 characters long.
+                </div>
+            </div>
+            <input type="text" formControlName="name" placeholder="Your Name *" appAutofocus>
+
+            <div *ngIf="mobile.invalid && (mobile.dirty || mobile.touched)" class="error">
+                <div *ngIf="mobile.errors.required">
+                    Mobile Number is required.
+                </div>
+                <div *ngIf="mobile.errors.minlength">
+                    Mobile Number Is 10 Digit Only.
+                </div>
+                <div *ngIf="mobile.errors.maxlength">
+                    Mobile Number Is 10 Digit Only.
+                </div>
+            </div>
+            <input type="text" formControlName="mobile" placeholder="Your Mobile *">
+            <input type="email" formControlName="email" placeholder="Your Email *">
+            <input type="text" formControlName="domain" placeholder="Your Domain *">
+        </fieldset>
+        <input type="submit" [disabled]="!traineeAddForm.valid" value="Submit" />
+    </form>
+</div>
